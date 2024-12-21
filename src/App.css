@@ -1,10 +1,124 @@
-.App {
-  text-align: center;
+.nav-ul {
+  padding: 10px;
+  margin: 0;
+  background-color: #ffbda5;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav-ul li {
+  display: inline-block;
+
+}
+
+.nav-ul li a {
+  padding: 10px;
+  text-decoration: none;
+  color: black
+}
+
+.nav-right {
+  text-align: right;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #ffbda5;
+}
+
+.product-page-error {
+  color: red;
+  font-size: 14px;
+}
+
+
+.product-list {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.product-list ul li {
+  display: inline-block;
+  border: 1px solid skyblue;
+  padding: 5px;
+  width: 150px;
+
+}
+
+.product-list ul {
+  margin: 0;
+}
+
+.search-box {
+  width: 238px;
+  margin: 10px;
+  height: 32px;
+  border-radius: 10px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.form-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+}
+
+/* Style for form heading */
+.form-container h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+  font-family: Arial, sans-serif;
+}
+
+/* Style for input fields */
+.form-container div {
+  margin-bottom: 15px;
+}
+
+.form-container input[type="text"],
+.form-container input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+/* Focus effect on input */
+.form-container input[type="text"]:focus,
+.form-container input[type="password"]:focus {
+  border-color: #66afe9;
+  box-shadow: 0 0 5px rgba(102, 175, 233, 0.5);
+}
+
+/* Submit button styling */
+.form-container button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-container button:hover {
+  background-color: #45a049;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -32,6 +146,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
